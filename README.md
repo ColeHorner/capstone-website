@@ -5,8 +5,11 @@ We will be learning as we go and updating our website with new features that we 
 We will be creating an educational tool. Currently it has a geography quiz, but we will be continuing to develop and add features to it.
 
 Next Steps:
+
 Improve UI look
+
 Display the current score
+
 Be tested on random capital/country pairs, not hardcoded
 
 Picture Sources
