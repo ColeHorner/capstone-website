@@ -4,6 +4,9 @@ We will be learning as we go and updating our website with new features that we 
 
 We will be creating an educational tool. Currently it has a geography quiz, but we will be continuing to develop and add features to it.
 
+![alt text](https://github.com/ColeHorner/capstone-website/blob/master/website2.png)
+![alt text](https://github.com/ColeHorner/capstone-website/blob/master/website1.png)
+
 Next Steps:
 
 Improve UI look
