@@ -58,7 +58,36 @@ const CapData = [
     capital: "Mombasa",
     continent: "Africa",
     tf: false
-
+  },
+  {
+    country: "Guatemala",
+    capital: "Guatemala City",
+    continent: "North America",
+    tf: true
+  },
+  {
+    country: "Brazil",
+    capital: "Sao Paulo",
+    continent: "South America",
+    tf: false
+  },
+  {
+    country: "Australia",
+    capital: "Sydney",
+    tf: false,
+    continent: "Oceania"
+  },
+  {
+    country: "Canada",
+    capital: "Ottawa",
+    continent: "North America",
+    tf: true
+  },
+  {
+    country: "New Zealand",
+    capital: "Wellington",
+    continent: "Oceania",
+    tf: true
   }
 ]
 export default CapData

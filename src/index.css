@@ -29,3 +29,8 @@
   width: 40%;
   top: 700px;
 }
+.contButton{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+}
