@@ -7,13 +7,21 @@ class ContinentButton extends React.Component{
   constructor(){
     super()
     this.state = {current: null}
+    this.handleClickEurope = this.handleClickEurope.bind(this)
     this.handleClickAsia = this.handleClickAsia.bind(this)
     this.handleClickAfrica = this.handleClickAfrica.bind(this)
     this.handleClickNorthAmerica = this.handleClickNorthAmerica.bind(this)
     this.handleClickSouthAmerica = this.handleClickSouthAmerica.bind(this)
     this.handleClickOceania = this.handleClickOceania.bind(this)
   }
-
+  handleClickEurope(){
+    if(this.state.current === "Europe"){
+      this.setState({current: null})
+    }
+    else{
+      this.setState({current: "Europe"})
+    }
+  }
   handleClickAsia(){
     if(this.state.current === "Asia"){
       this.setState({current: null})
@@ -58,18 +66,18 @@ class ContinentButton extends React.Component{
 
 
   render(){
+    //put all this in that thing that renders only at start
     var filtered = CapData;
     if(this.state.current != null){
     filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )}
-
-
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf}/>)
 
     return(
       <div>
+        <button className = "contButton" onClick ={this.handleClickEurope}>Europe</button>
         <button className = "contButton" onClick ={this.handleClickAsia}>Asia</button>
         <button className = "contButton" onClick ={this.handleClickAfrica}>Africa</button>
         <button className = "contButton" onClick ={this.handleClickNorthAmerica}>North America</button>
