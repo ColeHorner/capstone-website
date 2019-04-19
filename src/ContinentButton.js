@@ -15,20 +15,47 @@ class ContinentButton extends React.Component{
   }
 
   handleClickAsia(){
-    this.setState({current: "Asia"})
+    if(this.state.current === "Asia"){
+      this.setState({current: null})
+    }
+    else{
+      this.setState({current: "Asia"})
+    }
   }
+
   handleClickAfrica(){
-    this.setState({current: "Africa"})
+    if(this.state.current === "Africa"){
+      this.setState({current: null})
+    }
+    else{
+      this.setState({current: "Africa"})
+    }
   }
   handleClickNorthAmerica(){
+    if(this.state.current === "North America"){
+      this.setState({current: null})
+    }
+    else{
       this.setState({current: "North America"})
+    }
   }
   handleClickSouthAmerica(){
-        this.setState({current: "South America"})
+    if(this.state.current === "South America"){
+      this.setState({current: null})
+    }
+    else{
+      this.setState({current: "South America"})
+    }
   }
   handleClickOceania(){
-          this.setState({current: "Oceania"})
+    if(this.state.current === "Oceania"){
+      this.setState({current: null})
+    }
+    else{
+      this.setState({current: "Oceania"})
+    }
   }
+
 
   render(){
     var filtered = CapData;
