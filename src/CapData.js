@@ -18,6 +18,12 @@ const CapData = [
     tf: false
   },
   {
+    country: "Italy",
+    capital: "Venice",
+    continent: "Europe",
+    tf: false
+  },
+  {
     country:"China",
     capital:"Shanghai",
     continent:"Asia",
@@ -36,6 +42,12 @@ const CapData = [
     tf: true
   },
   {
+    country: "Vietnam",
+    capital: "Ho Chi Minh City",
+    continent: "Asia",
+    tf: false
+  },
+  {
     country: "Egypt",
     capital: "Cairo",
     continent: "Africa",
@@ -51,6 +63,12 @@ const CapData = [
     country: "Algeria",
     capital: "Algiers",
     continent: "Africa",
+    tf: true
+  },
+  {
+    country: "Nigeria",
+    capital:"Abuja",
+    continent:"Africa",
     tf: true
   },
   {
@@ -72,6 +90,12 @@ const CapData = [
     tf: true
   },
   {
+    country: "Cuba",
+    capital: "Havana",
+    continent: "North America",
+    tf: true
+  },
+  {
     country: "Peru",
     capital: "Lima",
     continent: "South America",
@@ -82,6 +106,18 @@ const CapData = [
     capital: "Sao Paulo",
     continent: "South America",
     tf: false
+  },
+  {
+    country: "Venezuela",
+    capital: "Maracaibo",
+    continent: "South America",
+    tf: false
+  },
+  {
+    country: "Argentina",
+    capital: "Buenos Aires",
+    continent: "South America",
+    tf: true
   },
   {
     country: "Australia",
@@ -102,9 +138,9 @@ const CapData = [
     tf: true
   },
   {
-    country: "Argentina",
-    capital: "Buenos Aires",
-    continent: "South America",
+    country: "Papua New Guinea",
+    capital: "Port Moresby",
+    continent: "Oceania",
     tf: true
   }
 ]
