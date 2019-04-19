@@ -31,8 +31,11 @@ class ContinentButton extends React.Component{
   }
 
   render(){
-    const filtered = CapData.filter(caps => (
-      caps.continent === this.state.current) )
+    var filtered = CapData;
+    if(this.state.current != null){
+    filtered = CapData.filter(caps => (
+      caps.continent === this.state.current) )}
+
 
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}

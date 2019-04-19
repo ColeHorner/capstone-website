@@ -25,25 +25,25 @@ class Capital extends React.Component{
   }
 
   colorChange1(){
-    let col = "#0000ff"
+    let color = "#0000ff"
     if((this.state.answered === true) && (this.state.clicked === true)){
-      col = "#00ff00"
+      color = "#00ff00"
     }
     if((this.state.answered === false) && (this.state.clicked === true)){
-      col = "#ff0000"
+      color = "#ff0000"
     }
-    return col
+    return color
   }
 
   colorChange2(){
-    let col = "#0000ff"
+    let color = "#0000ff"
     if((this.state.answered === true) && (this.state.clicked === false)){
-      col = "#00ff00"
+      color = "#00ff00"
     }
     if((this.state.answered === false) && (this.state.clicked === false)){
-      col = "#ff0000"
+      color = "#ff0000"
     }
-    return col
+    return color
   }
 
   render(){
