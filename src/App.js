@@ -1,24 +1,13 @@
 import React from 'react'
-import Capital from './Capital'
-import CapData from './CapData'
 import ContinentButton from './ContinentButton'
+import Head from './Head'
 
 class MyApp extends React.Component {
   render(){
-    const buttons = <ContinentButton />
-
-//    const filtered = CapData.filter(caps => caps.continent != null)
-
-/*    const gobble = filtered.map(cap =>
-    <Capital key = {cap.country} country={cap.country} capital={cap.capital}
-    continent = {cap.continent} tf = {cap.tf}/>)
-*/
     return(
       <div style = {{backgroundColor: "#eeeeff"}}>
-        <h1>Geography Quiz!</h1>
-        <h3>Do the countries match the capitals?</h3>
-        {buttons}
-        <hr />
+        <Head />
+        <ContinentButton />
         <img className = "picture1" alt = "American Capital"
         src = "https://www.aoc.gov/sites/default/files/styles/artwork-node/public/images/buildings/6080137063_3e6c91ee8b_o.jpg?itok=GLfzbhdq"/>
         <img className = "picture2" alt = "Peruvian Capital"

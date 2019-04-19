@@ -29,6 +29,7 @@ class ContinentButton extends React.Component{
   handleClickOceania(){
           this.setState({current: "Oceania"})
   }
+
   render(){
     const filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )
@@ -44,7 +45,6 @@ class ContinentButton extends React.Component{
         <button className = "contButton" onClick ={this.handleClickNorthAmerica}>North America</button>
         <button className = "contButton" onClick ={this.handleClickSouthAmerica}>South America</button>
         <button className = "contButton" onClick ={this.handleClickOceania}>Oceania</button>
-
         {gobble}
       </div>
     )

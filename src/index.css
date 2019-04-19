@@ -1,8 +1,4 @@
 
-.country{
-  font-size: 20px;
-}
-
 .button{
   border: 3px solid #000000;
   padding: 6px 10px;
@@ -10,7 +6,19 @@
   font-size: 24px;
   color: #ffffff;
 }
-
+.contButton{
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+}
+.country{
+  font-size: 20px;
+}
+.createdBy{
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
 .picture1{
   position: absolute;
   left: 600px;
@@ -28,9 +36,4 @@
   left: 600px;
   width: 40%;
   top: 700px;
-}
-.contButton{
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 18px;
 }

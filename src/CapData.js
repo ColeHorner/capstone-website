@@ -84,12 +84,6 @@ const CapData = [
     tf: false
   },
   {
-    country: "Argentina",
-    capital: "Buenos Aires",
-    continent: "South America",
-    tf: true
-  },
-  {
     country: "Australia",
     capital: "Sydney",
     tf: false,
@@ -105,6 +99,12 @@ const CapData = [
     country: "Samoa",
     capital: "Apia",
     continent: "Oceania",
+    tf: true
+  },
+  {
+    country: "Argentina",
+    capital: "Buenos Aires",
+    continent: "South America",
     tf: true
   }
 ]
