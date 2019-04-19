@@ -6,20 +6,32 @@ const CapData = [
     tf: true
   },
   {
-    country:"China",
-    capital:"Shanghai",
-    continent:"Asia",
-    tf: false
-  },
-  {
     country: "France",
     capital: "Paris",
     continent: "Europe",
     tf: true
   },
   {
+    country: "Netherlands",
+    capital: "Rotterdam",
+    continent: "Europe",
+    tf: false
+  },
+  {
+    country:"China",
+    capital:"Shanghai",
+    continent:"Asia",
+    tf: false
+  },
+  {
     country: "Japan",
     capital: "Tokyo",
+    continent: "Asia",
+    tf: true
+  },
+  {
+    country: "India",
+    capital: "New Delhi",
     continent: "Asia",
     tf: true
   },
@@ -30,33 +42,21 @@ const CapData = [
     tf: true
   },
   {
-    country: "United States",
-    capital: "New York City",
-    continent: "North America",
-    tf: false
-  },
-  {
-    country: "Peru",
-    capital: "Lima",
-    continent: "South America",
-    tf: true
-  },
-  {
-    country: "India",
-    capital: "New Delhi",
-    continent: "Asia",
-    tf: true
-  },
-  {
-    country: "Netherlands",
-    capital: "Rotterdam",
-    continent: "Europe",
-    tf: false
-  },
-  {
     country: "Kenya",
     capital: "Mombasa",
     continent: "Africa",
+    tf: false
+  },
+  {
+    country: "Algeria",
+    capital: "Algiers",
+    continent: "Africa",
+    tf: true
+  },
+  {
+    country: "United States",
+    capital: "New York City",
+    continent: "North America",
     tf: false
   },
   {
@@ -66,10 +66,28 @@ const CapData = [
     tf: true
   },
   {
+    country: "Canada",
+    capital: "Ottawa",
+    continent: "North America",
+    tf: true
+  },
+  {
+    country: "Peru",
+    capital: "Lima",
+    continent: "South America",
+    tf: true
+  },
+  {
     country: "Brazil",
     capital: "Sao Paulo",
     continent: "South America",
     tf: false
+  },
+  {
+    country: "Argentina",
+    capital: "Buenos Aires",
+    continent: "South America",
+    tf: true
   },
   {
     country: "Australia",
@@ -78,14 +96,14 @@ const CapData = [
     continent: "Oceania"
   },
   {
-    country: "Canada",
-    capital: "Ottawa",
-    continent: "North America",
+    country: "New Zealand",
+    capital: "Wellington",
+    continent: "Oceania",
     tf: true
   },
   {
-    country: "New Zealand",
-    capital: "Wellington",
+    country: "Samoa",
+    capital: "Apia",
     continent: "Oceania",
     tf: true
   }
