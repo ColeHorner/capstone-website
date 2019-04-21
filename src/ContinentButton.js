@@ -64,7 +64,6 @@ class ContinentButton extends React.Component{
     }
   }
 
-
   render(){
     //put all this in that thing that renders only at start
     var filtered = CapData;
@@ -73,7 +72,7 @@ class ContinentButton extends React.Component{
       caps.continent === this.state.current) )}
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}
-        continent = {cap.continent} tf = {cap.tf}/>)
+        continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
 
     return(
       <div>

@@ -57,6 +57,7 @@ class Capital extends React.Component{
         <button style =
         {{backgroundColor : this.colorChange2()}}
           className = "button" onClick={this.handleClickFalse}>False</button>
+           {this.state.answered != null && <span className = "country">  {this.props.correct}</span>}
         <hr  style = {{width: "200px", marginLeft:"0px"}}/>
       </div>
     )
