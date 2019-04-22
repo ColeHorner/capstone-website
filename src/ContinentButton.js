@@ -64,8 +64,23 @@ class ContinentButton extends React.Component{
     }
   }
 
+  selRandom(){
+    const len = CapData.length
+    var vals = []
+    var nums = []
+    for(let i = 0; i< 10;){
+      var pos = Math.floor(Math.random() * len)
+      if(!nums.includes(pos)){
+        vals[i] = CapData[pos]
+        i++
+      }
+    }
+    return vals
+  }
+
   render(){
     //put all this in that thing that renders only at start
+    //var filtered = this.selRandom();
     var filtered = CapData;
     if(this.state.current != null){
     filtered = CapData.filter(caps => (
@@ -73,7 +88,6 @@ class ContinentButton extends React.Component{
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
-
     return(
       <div>
         <button className = "contButton" onClick ={this.handleClickEurope}>Europe</button>
