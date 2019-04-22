@@ -12,7 +12,7 @@ const CapData = [
     tf: true
   },
   {
-    country: "Netherlands",
+    country: "the Netherlands",
     capital: "Rotterdam",
     continent: "Europe",
     tf: false,
@@ -24,6 +24,12 @@ const CapData = [
     continent: "Europe",
     tf: false,
     correct: "Rome"
+  },
+  {
+    country: "Poland",
+    capital: "Warsaw",
+    continent: "Europe",
+    tf: true
   },
   {
     country:"China",
@@ -52,6 +58,14 @@ const CapData = [
     correct: "Hanoi"
   },
   {
+    country: "Iraq",
+    capital: "Mosul",
+    continent: "Asia",
+    tf: false,
+    correct: "Baghdad"
+
+  },
+  {
     country: "Egypt",
     capital: "Cairo",
     continent: "Africa",
@@ -77,6 +91,13 @@ const CapData = [
     tf: true
   },
   {
+    country: "Zimbabwe",
+    capital: "Bulawayo",
+    continent: "Africa",
+    tf: false,
+    correct: "Harare"
+  },
+  {
     country: "United States",
     capital: "New York City",
     continent: "North America",
@@ -98,6 +119,12 @@ const CapData = [
   {
     country: "Cuba",
     capital: "Havana",
+    continent: "North America",
+    tf: true
+  },
+  {
+    country: "Panama",
+    capital: "Panama City",
     continent: "North America",
     tf: true
   },
@@ -128,6 +155,13 @@ const CapData = [
     tf: true
   },
   {
+    country: "Chile",
+    capital: "Valparaíso",
+    continent: "South America",
+    tf: false,
+    correct: "Santiago"
+  },
+  {
     country: "Australia",
     capital: "Sydney",
     tf: false,
@@ -151,6 +185,13 @@ const CapData = [
     capital: "Port Moresby",
     continent: "Oceania",
     tf: true
+  },
+  {
+    country: "Figi",
+    capital: "Lautoka",
+    continent: "Oceania",
+    tf: false,
+    correct: "Suva"
   }
 ]
 export default CapData

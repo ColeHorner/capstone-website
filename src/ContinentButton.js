@@ -72,6 +72,7 @@ class ContinentButton extends React.Component{
       var pos = Math.floor(Math.random() * len)
       if(!nums.includes(pos)){
         vals[i] = CapData[pos]
+        nums[i] = pos
         i++
       }
     }
@@ -80,8 +81,8 @@ class ContinentButton extends React.Component{
 
   render(){
     //put all this in that thing that renders only at start
-    //var filtered = this.selRandom();
-    var filtered = CapData;
+    var filtered = this.selRandom();
+    //var filtered = CapData;
     if(this.state.current != null){
     filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )}
