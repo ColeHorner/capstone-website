@@ -13,7 +13,11 @@ Improve UI look
 
 Display the current score
 
+Either completely reset answers when changing tabs, or save all answers between tabs
+
 Be tested on random capital/country pairs, not hardcoded
+
+Refactor so the code doesn't look like trash (things like changing Capital.js to Question.js, trying to reduce redundency in the button methods, and deciding if we can/should get rid of the App.js class
 
 Picture Sources
 https://www.aoc.gov/sites/default/files/styles/artwork-node/public/images/buildings/6080137063_3e6c91ee8b_o.jpg?itok=GLfzbhdq
