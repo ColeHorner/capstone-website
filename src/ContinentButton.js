@@ -13,10 +13,12 @@ class ContinentButton extends React.Component{
     this.handleClickNorthAmerica = this.handleClickNorthAmerica.bind(this)
     this.handleClickSouthAmerica = this.handleClickSouthAmerica.bind(this)
     this.handleClickOceania = this.handleClickOceania.bind(this)
+    this.handleClickReset = this.handleClickReset.bind(this)
+
   }
   handleClickEurope(){
     if(this.state.current === "Europe"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "Europe"})
@@ -24,7 +26,7 @@ class ContinentButton extends React.Component{
   }
   handleClickAsia(){
     if(this.state.current === "Asia"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "Asia"})
@@ -33,7 +35,7 @@ class ContinentButton extends React.Component{
 
   handleClickAfrica(){
     if(this.state.current === "Africa"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "Africa"})
@@ -41,7 +43,7 @@ class ContinentButton extends React.Component{
   }
   handleClickNorthAmerica(){
     if(this.state.current === "North America"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "North America"})
@@ -49,7 +51,7 @@ class ContinentButton extends React.Component{
   }
   handleClickSouthAmerica(){
     if(this.state.current === "South America"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "South America"})
@@ -57,11 +59,19 @@ class ContinentButton extends React.Component{
   }
   handleClickOceania(){
     if(this.state.current === "Oceania"){
-      this.setState({current: null})
+      this.setState({current: "reset"})
     }
     else{
       this.setState({current: "Oceania"})
     }
+  }
+
+  handleClickReset(){
+    this.setState(prevState => {
+        return {
+            current: "reset"
+        }
+    })
   }
 
   selRandom(){
@@ -80,15 +90,17 @@ class ContinentButton extends React.Component{
   }
 
   render(){
-    //put all this in that thing that renders only at start
+    //put all this in that thing that renders only at start IDK if this actually works
     var filtered = this.selRandom();
-    //var filtered = CapData;
     if(this.state.current != null){
-    filtered = CapData.filter(caps => (
+      filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )}
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+    if(this.state.current === "reset"){
+      this.setState({current: null})
+    }
     return(
       <div>
         <button className = "contButton" onClick ={this.handleClickEurope}>Europe</button>
@@ -97,6 +109,7 @@ class ContinentButton extends React.Component{
         <button className = "contButton" onClick ={this.handleClickNorthAmerica}>North America</button>
         <button className = "contButton" onClick ={this.handleClickSouthAmerica}>South America</button>
         <button className = "contButton" onClick ={this.handleClickOceania}>Oceania</button>
+        <button className = "contButton" onClick ={this.handleClickReset}>Reset</button>
         {gobble}
       </div>
     )
