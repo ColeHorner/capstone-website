@@ -14,7 +14,6 @@ class ContinentButton extends React.Component{
     this.handleClickSouthAmerica = this.handleClickSouthAmerica.bind(this)
     this.handleClickOceania = this.handleClickOceania.bind(this)
     this.handleClickReset = this.handleClickReset.bind(this)
-
   }
   handleClickEurope(){
     if(this.state.current === "Europe"){
@@ -98,6 +97,8 @@ class ContinentButton extends React.Component{
     const gobble = filtered.map(cap =>
         <Capital key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+
+    //this is bad code. I'm sure there is a better way than this, I just don't know it
     if(this.state.current === "reset"){
       this.setState({current: null})
     }
@@ -107,6 +108,7 @@ class ContinentButton extends React.Component{
         <button className = "contButton" onClick ={this.handleClickAsia}>Asia</button>
         <button className = "contButton" onClick ={this.handleClickAfrica}>Africa</button>
         <button className = "contButton" onClick ={this.handleClickNorthAmerica}>North America</button>
+        <br />
         <button className = "contButton" onClick ={this.handleClickSouthAmerica}>South America</button>
         <button className = "contButton" onClick ={this.handleClickOceania}>Oceania</button>
         <button className = "contButton" onClick ={this.handleClickReset}>Reset</button>
