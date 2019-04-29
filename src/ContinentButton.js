@@ -1,5 +1,5 @@
 import React from "react"
-import Capital from './Capital'
+import Question from './Question'
 import CapData from './CapData'
 
 class ContinentButton extends React.Component{
@@ -73,11 +73,12 @@ class ContinentButton extends React.Component{
     })
   }
 
-  selRandom(){
+  //method to get a given number of items out of CapData
+  selRandom(numToSel){
     const len = CapData.length
     var vals = []
     var nums = []
-    for(let i = 0; i< 10;){
+    for(let i = 0; i< numToSel;){
       var pos = Math.floor(Math.random() * len)
       if(!nums.includes(pos)){
         vals[i] = CapData[pos]
@@ -90,12 +91,12 @@ class ContinentButton extends React.Component{
 
   render(){
     //put all this in that thing that renders only at start IDK if this actually works
-    var filtered = this.selRandom();
+    var filtered = this.selRandom(10);
     if(this.state.current != null){
       filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )}
     const gobble = filtered.map(cap =>
-        <Capital key = {cap.country} country={cap.country} capital={cap.capital}
+        <Question key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
 
     //this is bad code. I'm sure there is a better way than this, I just don't know it

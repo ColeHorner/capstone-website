@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Capital extends React.Component{
+class Question extends React.Component{
   constructor(){
     super()
     this.state = {answer: null, clicked: null}
@@ -65,4 +65,4 @@ class Capital extends React.Component{
   }
 }
 
-export default Capital
+export default Question
