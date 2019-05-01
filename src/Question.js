@@ -3,9 +3,10 @@ import React from 'react'
 class Question extends React.Component{
   constructor(){
     super()
-    this.state = {answer: null, clicked: null}
+    this.state = {answer: null, clicked: null, printed: null }
     this.handleClickTrue = this.handleClickTrue.bind(this)
     this.handleClickFalse = this.handleClickFalse.bind(this)
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleClickTrue(){
@@ -46,10 +47,17 @@ class Question extends React.Component{
     return color
   }
 
+  handleChange(event){
+    this.setState({
+      printed: event.target.value
+    })
+  }
+
   render(){
     return(
       <div>
         <p className = "country">{this.props.capital} --> {this.props.country}</p>
+
         <button style =
           {{backgroundColor : this.colorChange1()}}
           className = "button" onClick={this.handleClickTrue}>True</button>
