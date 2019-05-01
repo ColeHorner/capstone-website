@@ -6,7 +6,6 @@ class Question extends React.Component{
     this.state = {answer: null, clicked: null, printed: null }
     this.handleClickTrue = this.handleClickTrue.bind(this)
     this.handleClickFalse = this.handleClickFalse.bind(this)
-    this.handleChange = this.handleChange.bind(this)
   }
 
   handleClickTrue(){
@@ -45,12 +44,6 @@ class Question extends React.Component{
       color = "#ff0000"
     }
     return color
-  }
-
-  handleChange(event){
-    this.setState({
-      printed: event.target.value
-    })
   }
 
   render(){

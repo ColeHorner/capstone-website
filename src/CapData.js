@@ -3,13 +3,15 @@ const CapData = [
     country: "Spain",
     capital: "Madrid",
     continent: "Europe",
-    tf: true
+    tf: true,
+    correct: "Madrid"
   },
   {
     country: "France",
     capital: "Paris",
     continent: "Europe",
-    tf: true
+    tf: true,
+    correct: "Paris"
   },
   {
     country: "the Netherlands",
@@ -29,7 +31,8 @@ const CapData = [
     country: "Poland",
     capital: "Warsaw",
     continent: "Europe",
-    tf: true
+    tf: true,
+    correct: "Warsaw"
   },
   {
     country:"China",
@@ -42,13 +45,15 @@ const CapData = [
     country: "Japan",
     capital: "Tokyo",
     continent: "Asia",
-    tf: true
+    tf: true,
+    correct: "Tokyo"
   },
   {
     country: "India",
     capital: "New Delhi",
     continent: "Asia",
-    tf: true
+    tf: true,
+    correct: "New Delhi"
   },
   {
     country: "Vietnam",
@@ -69,7 +74,8 @@ const CapData = [
     country: "Egypt",
     capital: "Cairo",
     continent: "Africa",
-    tf: true
+    tf: true,
+    correct: 'Cairo'
   },
   {
     country: "Kenya",
@@ -82,13 +88,15 @@ const CapData = [
     country: "Algeria",
     capital: "Algiers",
     continent: "Africa",
-    tf: true
+    tf: true,
+    correct: "Algiers"
   },
   {
     country: "Nigeria",
     capital:"Abuja",
     continent:"Africa",
-    tf: true
+    tf: true,
+    correct: "Abuja"
   },
   {
     country: "Zimbabwe",
@@ -108,31 +116,36 @@ const CapData = [
     country: "Guatemala",
     capital: "Guatemala City",
     continent: "North America",
-    tf: true
+    tf: true,
+    correct: "Guatemala City"
   },
   {
     country: "Canada",
     capital: "Ottawa",
     continent: "North America",
-    tf: true
+    tf: true,
+    correct: "Ottawa"
   },
   {
     country: "Cuba",
     capital: "Havana",
     continent: "North America",
-    tf: true
+    tf: true,
+    correct: "Havana"
   },
   {
     country: "Panama",
     capital: "Panama City",
     continent: "North America",
-    tf: true
+    tf: true,
+    correct: "Panama City"
   },
   {
     country: "Peru",
     capital: "Lima",
     continent: "South America",
-    tf: true
+    tf: true,
+    correct: "Lima"
   },
   {
     country: "Brazil",
@@ -152,7 +165,8 @@ const CapData = [
     country: "Argentina",
     capital: "Buenos Aires",
     continent: "South America",
-    tf: true
+    tf: true,
+    correct: "Buenos Aires"
   },
   {
     country: "Chile",
@@ -172,19 +186,22 @@ const CapData = [
     country: "New Zealand",
     capital: "Wellington",
     continent: "Oceania",
-    tf: true
+    tf: true,
+    correct: "Wellington"
   },
   {
     country: "Samoa",
     capital: "Apia",
     continent: "Oceania",
-    tf: true
+    tf: true,
+    correct: "Apia"
   },
   {
     country: "Papua New Guinea",
     capital: "Port Moresby",
     continent: "Oceania",
-    tf: true
+    tf: true,
+    correct: "Port Moresby"
   },
   {
     country: "Figi",

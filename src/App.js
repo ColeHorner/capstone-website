@@ -1,5 +1,4 @@
 import React from 'react'
-import ContinentButton from './ContinentButton'
 import Head from './Head'
 import PageOne from './PageOne'
 import PageTwo from './PageTwo'

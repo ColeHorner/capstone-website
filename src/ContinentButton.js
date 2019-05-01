@@ -1,6 +1,7 @@
 import React from "react"
 import Question from './Question'
 import CapData from './CapData'
+import TypeQuestion from './TypeQuestion'
 
 class ContinentButton extends React.Component{
 
@@ -48,12 +49,20 @@ class ContinentButton extends React.Component{
   render(){
     //put all this in that thing that renders only at start IDK if this actually works
     var filtered = this.selRandom(10);
+    var gobble = []
     if(this.state.current != null){
       filtered = CapData.filter(caps => (
       caps.continent === this.state.current) )}
-    const gobble = filtered.map(cap =>
-        <Question key = {cap.country} country={cap.country} capital={cap.capital}
+    if(this.props.page === "page1"){
+       gobble = filtered.map(cap =>
+          <Question key = {cap.country} country={cap.country} capital={cap.capital}
+          continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+    }
+    if(this.props.page === "page2"){
+     gobble = filtered.map(cap =>
+        <TypeQuestion key = {cap.country} country={cap.country} capital={cap.capital}
         continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+      }
 
     //this is bad code. I'm sure there is a better way than this, I just don't know it
     if(this.state.current === "reset"){
@@ -70,13 +79,6 @@ class ContinentButton extends React.Component{
         <button className = "contButton" onClick ={this.handleClick} name = "Oceania">Oceania</button>
         <button className = "contButton" onClick ={this.handleClickReset}>Reset</button>
         {gobble}
-        <form>
-          <label>
-            <input type="text" name="Country" onChange ={this.handleChange} />
-          </label>
-          <input type="submit" value="submit" />
-        </form>
-        <h1>{this.state.printed}</h1>
       </div>
     )
   }

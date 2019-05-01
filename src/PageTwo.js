@@ -1,13 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import Head from './Head'
+import TypeQuestion from './TypeQuestion'
+import ContinentButton from './ContinentButton'
 
 class PageTwo extends React.Component{
   render(){
     return(
-      <div>
-        <h1>This is the second page</h1>
-      </div>
+        <div style = {{backgroundColor: "#eeeeff"}}>
+          <ContinentButton page = "page2" />
+        </div>
     )
   }
 }
