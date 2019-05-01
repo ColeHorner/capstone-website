@@ -10,8 +10,8 @@ class Head extends React.Component{
         https://github.com/ColeHorner/capstone-website </p>
         <nav>
           <ul>
-            <li><a href = "/PageOne">True-False Quiz</a></li>
-            <li><a href = "/PageTwo">Typed Quiz</a></li>
+            <p><a href = "/PageOne">True-False Quiz</a></p> 
+            <p><a href = "/PageTwo">Fill in the Blank Quiz</a></p>
           </ul>
         </nav>
         <img className = "picture1" alt = "American Capital"
