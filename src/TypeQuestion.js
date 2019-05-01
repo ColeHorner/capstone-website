@@ -4,10 +4,11 @@ import CapData from './CapData'
 class TypeQuestion extends React.Component{
   constructor(props) {
     super(props);
-    this.state = {value: '', answered: false};
+    this.state = {value: '', answered: null}
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.colorChange = this.colorChange.bind(this)
   }
   handleChange(event) {
     this.setState({value: event.target.value});
@@ -17,10 +18,23 @@ class TypeQuestion extends React.Component{
     event.preventDefault();
     if(this.state.value.toLowerCase().trim() === this.props.correct.toLowerCase().trim()){
       alert("Correct!")
+      this.setState({answered: true})
     }
     else{
       alert("The actual answer is " + this.props.correct)
+      this.setState({answered: false})
     }
+  }
+
+  colorChange(){
+    var color = null;
+    if(this.state.answered === true){
+      color = "#00ff00"
+    }
+    if(this.state.answered === false){
+      color = "#ff0000"
+    }
+    return color
   }
 
   render() {
@@ -33,7 +47,7 @@ class TypeQuestion extends React.Component{
             Name:
             <input type="text" value={this.state.value} onChange={this.handleChange} />
           </label>
-          <input type="submit" value="Submit" />
+          <input style = {{backgroundColor: this.colorChange()}} type="submit" value="Submit" />
         </form>
       </div>
     );
