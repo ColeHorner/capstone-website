@@ -1,11 +1,11 @@
 import React from 'react'
-import TypeQuestion from './TypeQuestion'
 import ContinentButton from './ContinentButton'
 
 class PageTwo extends React.Component{
   render(){
     return(
-        <div style = {{backgroundColor: "#eeeeff"}}>
+        <div>
+          <h3>Fill in the capital of each given country</h3>
           <ContinentButton page = "page2" />
         </div>
     )

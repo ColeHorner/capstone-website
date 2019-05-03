@@ -49,7 +49,7 @@ class Question extends React.Component{
   render(){
     return(
       <div>
-        <p className = "country">{this.props.capital} --> {this.props.country}</p>
+        <p className = "country">{this.props.given} --> {this.props.country}</p>
 
         <button style =
           {{backgroundColor : this.colorChange1()}}
@@ -58,8 +58,8 @@ class Question extends React.Component{
         <button style =
         {{backgroundColor : this.colorChange2()}}
           className = "button" onClick={this.handleClickFalse}>False</button>
-        {this.props.tf === false && (this.state.answer != null && 
-          <span className = "country"> The capital of {this.props.country} is {this.props.correct}.</span>)}
+        {this.props.tf === false && (this.state.answer != null &&
+          <span className = "country"> The capital of {this.props.country} is {this.props.capital}.</span>)}
         <hr  style = {{width: "200px", marginLeft:"0px"}}/>
       </div>
     )

@@ -12,7 +12,6 @@ class ContinentButton extends React.Component{
     this.handleClick = this.handleClick.bind(this)
 
   }
-
   handleClick(e){
     if(this.state.current === e.target.name){
       this.setState({current: "reset"})
@@ -21,7 +20,6 @@ class ContinentButton extends React.Component{
       this.setState({current: e.target.name})
     }
   }
-
   handleClickReset(){
     this.setState(prevState => {
         return {
@@ -29,7 +27,6 @@ class ContinentButton extends React.Component{
         }
     })
   }
-
   //method to get a given number of items out of CapData
   selRandom(numToSel){
     const len = CapData.length
@@ -55,15 +52,14 @@ class ContinentButton extends React.Component{
       caps.continent === this.state.current) )}
     if(this.props.page === "page1"){
        gobble = filtered.map(cap =>
-          <Question key = {cap.country} country={cap.country} capital={cap.capital}
-          continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+          <Question key = {cap.country} country={cap.country} given={cap.given}
+          continent = {cap.continent} tf = {cap.tf} capital = {cap.capital}/>)
     }
     if(this.props.page === "page2"){
      gobble = filtered.map(cap =>
-        <TypeQuestion key = {cap.country} country={cap.country} capital={cap.capital}
-        continent = {cap.continent} tf = {cap.tf} correct = {cap.correct}/>)
+        <TypeQuestion key = {cap.country} country={cap.country} given={cap.given}
+        continent = {cap.continent} tf = {cap.tf} capital = {cap.capital}/>)
       }
-
     //this is bad code. I'm sure there is a better way than this, I just don't know it
     if(this.state.current === "reset"){
       this.setState({current: null})

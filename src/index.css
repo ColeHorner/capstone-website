@@ -19,6 +19,24 @@
   top: 25px;
   right: 50px;
 }
+.list{
+  list-style-type: none;
+  width: 200px;
+  background-color: #ddddff;
+  border-style: solid;
+  border-width: 2px;
+  margin: 0px;
+  padding: 0px;
+}
+.listItem{
+  display: block;
+  padding: 5px;
+
+}
+.listItem:hover{
+  background-color: #2222ff;
+  color: #ffffff;
+}
 .picture1{
   position: absolute;
   left: 650px;

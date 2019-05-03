@@ -5,13 +5,12 @@ class Head extends React.Component{
     return(
       <div>
         <h1>Geography Quiz!</h1>
-        <h3>Do the countries match the capitals?</h3>
-        <p className = "createdBy">Created by Tim Haynes and Cole Horner <br />
-        https://github.com/ColeHorner/capstone-website </p>
+        <p className = "createdBy">Created by Tim Haynes  <br /> Moral Support Provided By: Cole Horner <br />
+        https://github.com/thaynes19/capstone-website </p>
         <nav>
-          <ul>
-            <p><a href = "/PageOne">True-False Quiz</a></p> 
-            <p><a href = "/PageTwo">Fill in the Blank Quiz</a></p>
+          <ul className = "list">
+            <li><a className = "listItem" href = "/TrueFalseQuiz">True-False Quiz</a></li>
+            <li><a className = "listItem" href = "/FillInTheBlankQuiz">Fill in the Blank Quiz</a></li>
           </ul>
         </nav>
         <img className = "picture1" alt = "American Capital"

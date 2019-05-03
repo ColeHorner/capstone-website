@@ -11,8 +11,8 @@ class MyApp extends React.Component {
       <BrowserRouter>
         <div style = {{backgroundColor: "#eeeeff"}}>
           <Head />
-          <Route path = "/PageOne" component = {PageOne} />
-          <Route path = "/PageTwo" component = {PageTwo} />
+          <Route path = "/TrueFalseQuiz" component = {PageOne} />
+          <Route path = "/FillInTheBlankQuiz" component = {PageTwo} />
         </div>
       </BrowserRouter>
     )

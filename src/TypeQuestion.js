@@ -1,5 +1,4 @@
 import React from 'react'
-import CapData from './CapData'
 
 class TypeQuestion extends React.Component{
   constructor(props) {
@@ -40,7 +39,7 @@ class TypeQuestion extends React.Component{
   render() {
     return (
       <div>
-        <p className = "country">What is the capital of {this.props.country}</p>
+        <p className = "country">What is the capital of {this.props.country}?</p>
 
         <form onSubmit={this.handleSubmit}>
           <label>

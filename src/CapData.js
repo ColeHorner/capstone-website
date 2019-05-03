@@ -1,214 +1,249 @@
 const CapData = [
   {
     country: "Spain",
-    capital: "Madrid",
+    given: "Madrid",
     continent: "Europe",
     tf: true,
-    correct: "Madrid"
+    capital: "Madrid"
   },
   {
     country: "France",
-    capital: "Paris",
+    given: "Paris",
     continent: "Europe",
     tf: true,
-    correct: "Paris"
+    capital: "Paris"
   },
   {
     country: "the Netherlands",
-    capital: "Rotterdam",
+    given: "Rotterdam",
     continent: "Europe",
     tf: false,
-    correct: "Amsterdam"
+    capital: "Amsterdam"
   },
   {
     country: "Italy",
-    capital: "Venice",
+    given: "Venice",
     continent: "Europe",
     tf: false,
-    correct: "Rome"
+    capital: "Rome"
   },
   {
     country: "Poland",
-    capital: "Warsaw",
+    given: "Warsaw",
     continent: "Europe",
     tf: true,
-    correct: "Warsaw"
+    capital: "Warsaw"
+  },
+  {
+    country: "Norway",
+    given: "Trondheim",
+    continent: "Europe",
+    tf: false,
+    capital: "Oslo"
   },
   {
     country:"China",
-    capital:"Shanghai",
+    given:"Shanghai",
     continent:"Asia",
     tf: false,
-    correct: "Beijing"
+    capital: "Beijing"
   },
   {
     country: "Japan",
-    capital: "Tokyo",
+    given: "Tokyo",
     continent: "Asia",
     tf: true,
-    correct: "Tokyo"
+    capital: "Tokyo"
   },
   {
     country: "India",
-    capital: "New Delhi",
+    given: "New Delhi",
     continent: "Asia",
     tf: true,
-    correct: "New Delhi"
+    capital: "New Delhi"
   },
   {
     country: "Vietnam",
-    capital: "Ho Chi Minh City",
+    given: "Ho Chi Minh City",
     continent: "Asia",
     tf: false,
-    correct: "Hanoi"
+    capital: "Hanoi"
   },
   {
     country: "Iraq",
-    capital: "Mosul",
+    given: "Mosul",
     continent: "Asia",
     tf: false,
-    correct: "Baghdad"
+    capital: "Baghdad"
 
   },
   {
+    country: "Bhutan",
+    given: "Thimphu",
+    continent: "Asia",
+    tf: true,
+    capital: "Thimphu"
+  },
+  {
     country: "Egypt",
-    capital: "Cairo",
+    given: "Cairo",
     continent: "Africa",
     tf: true,
-    correct: 'Cairo'
+    capital: 'Cairo'
   },
   {
     country: "Kenya",
-    capital: "Mombasa",
+    given: "Mombasa",
     continent: "Africa",
     tf: false,
-    correct: "Nairobi"
+    capital: "Nairobi"
   },
   {
     country: "Algeria",
-    capital: "Algiers",
+    given: "Algiers",
     continent: "Africa",
     tf: true,
-    correct: "Algiers"
+    capital: "Algiers"
   },
   {
     country: "Nigeria",
-    capital:"Abuja",
+    given:"Abuja",
     continent:"Africa",
     tf: true,
-    correct: "Abuja"
+    capital: "Abuja"
   },
   {
     country: "Zimbabwe",
-    capital: "Bulawayo",
+    given: "Bulawayo",
     continent: "Africa",
     tf: false,
-    correct: "Harare"
+    capital: "Harare"
+  },
+  {
+    country: "Senegal",
+    given: "Touba",
+    continent: "Africa",
+    tf: false,
+    capital: "Dakar"
   },
   {
     country: "United States",
-    capital: "New York City",
+    given: "New York City",
     continent: "North America",
     tf: false,
-    correct: "Washington DC"
+    capital: "Washington DC"
   },
   {
     country: "Guatemala",
-    capital: "Guatemala City",
+    given: "Guatemala City",
     continent: "North America",
     tf: true,
-    correct: "Guatemala City"
+    capital: "Guatemala City"
   },
   {
     country: "Canada",
-    capital: "Ottawa",
+    given: "Ottawa",
     continent: "North America",
     tf: true,
-    correct: "Ottawa"
+    capital: "Ottawa"
   },
   {
     country: "Cuba",
-    capital: "Havana",
+    given: "Havana",
     continent: "North America",
     tf: true,
-    correct: "Havana"
+    capital: "Havana"
   },
   {
     country: "Panama",
-    capital: "Panama City",
+    given: "Panama City",
     continent: "North America",
     tf: true,
-    correct: "Panama City"
+    capital: "Panama City"
+  },
+  {
+    country: "Jamaica",
+    given: "Portmore",
+    continent: "North America",
+    tf: false,
+    capital: "Kingston"
   },
   {
     country: "Peru",
-    capital: "Lima",
+    given: "Lima",
     continent: "South America",
     tf: true,
-    correct: "Lima"
+    capital: "Lima"
   },
   {
     country: "Brazil",
-    capital: "Sao Paulo",
+    given: "Sao Paulo",
     continent: "South America",
     tf: false,
-    correct: "Brasília"
+    capital: "Brasília"
   },
   {
     country: "Venezuela",
-    capital: "Maracaibo",
+    given: "Maracaibo",
     continent: "South America",
     tf: false,
-    correct: "Caracas"
+    capital: "Caracas"
   },
   {
     country: "Argentina",
-    capital: "Buenos Aires",
+    given: "Buenos Aires",
     continent: "South America",
     tf: true,
-    correct: "Buenos Aires"
+    capital: "Buenos Aires"
   },
   {
     country: "Chile",
-    capital: "Valparaíso",
+    given: "Valparaíso",
     continent: "South America",
     tf: false,
-    correct: "Santiago"
+    capital: "Santiago"
+  },
+  {
+    country: "Uruguay",
+    given: "Montevideo",
+    continent: "South America",
+    tf: true,
+    capital: "Montevideo"
   },
   {
     country: "Australia",
-    capital: "Sydney",
+    given: "Sydney",
     tf: false,
     continent: "Oceania",
-    correct: "Canberra"
+    capital: "Canberra"
   },
   {
     country: "New Zealand",
-    capital: "Wellington",
+    given: "Wellington",
     continent: "Oceania",
     tf: true,
-    correct: "Wellington"
+    capital: "Wellington"
   },
   {
     country: "Samoa",
-    capital: "Apia",
+    given: "Apia",
     continent: "Oceania",
     tf: true,
-    correct: "Apia"
+    capital: "Apia"
   },
   {
     country: "Papua New Guinea",
-    capital: "Port Moresby",
+    given: "Port Moresby",
     continent: "Oceania",
     tf: true,
-    correct: "Port Moresby"
+    capital: "Port Moresby"
   },
   {
     country: "Figi",
-    capital: "Lautoka",
+    given: "Lautoka",
     continent: "Oceania",
     tf: false,
-    correct: "Suva"
+    capital: "Suva"
   }
 ]
 export default CapData
